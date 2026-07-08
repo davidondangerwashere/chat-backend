@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Video Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Stranger Chat</h1>
+    </div>
+
+    <div class="video-container">
+        <!-- আপনার নিজের ক্যামেরা -->
+        <video id="localVideo" autoplay muted playsinline></video>
+        <!-- অপরিচিত ব্যক্তির ক্যামেরা -->
+        <video id="remoteVideo" autoplay playsinline></video>
+    </div>
+
+    <div class="controls">
+        <button id="nextBtn">Start / Next</button>
+    </div>
+
+    <!-- প্রয়োজনীয় লাইব্রেরি -->
+    <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
